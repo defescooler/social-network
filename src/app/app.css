@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e9f0ff 0%, #f7fbff 100%);
+  color: #222;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(90deg, #229ed9 0%, #4fc3f7 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(34, 158, 217, 0.08);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding: 0 2rem;
+}
+
+header h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+header img {
+  box-shadow: 0 2px 8px 0 rgba(34, 158, 217, 0.15);
+  border: 2px solid #fff;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+header img:hover {
+  box-shadow: 0 4px 16px 0 rgba(34, 158, 217, 0.25);
+  border: 2px solid #229ed9;
+}
+
+article {
+  display: flex;
+  background: transparent;
+  min-height: calc(100vh - 4rem);
+}
+
+aside {
+  background: #f5faff;
+  min-width: 90px;
+  max-width: 260px;
+  box-shadow: 2px 0 12px 0 rgba(34, 158, 217, 0.06);
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+aside a {
+  background: #fff;
+  color: #229ed9;
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 1px 4px 0 rgba(34, 158, 217, 0.04);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside a.active, aside a:focus, aside a:hover {
+  background: linear-gradient(90deg, #229ed9 0%, #4fc3f7 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(34, 158, 217, 0.12);
+}
+
+.Outlet {
+  flex: 1;
+  background: #fff;
+  border-radius: 18px;
+  margin: 2rem;
+  box-shadow: 0 2px 16px 0 rgba(34, 158, 217, 0.08);
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+button, .button {
+  background: linear-gradient(90deg, #229ed9 0%, #4fc3f7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(34, 158, 217, 0.10);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover, .button:hover {
+  background: linear-gradient(90deg, #1b8ec6 0%, #229ed9 100%);
+  box-shadow: 0 4px 16px 0 rgba(34, 158, 217, 0.18);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e9f0ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #b3e0fc;
+  border-radius: 8px;
+}
